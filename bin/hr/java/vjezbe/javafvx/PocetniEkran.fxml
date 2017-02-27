@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="483.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.javafvx.PocetniEkranController">
+   <left>
+      <Pane prefHeight="284.0" prefWidth="273.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="komponenteList" layoutX="67.0" layoutY="38.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="339.0" prefWidth="638.0" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="398.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="racunaloLista" layoutX="488.0" layoutY="34.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="520.0" prefHeight="343.0" prefWidth="638.0" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="77.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dodajButton" layoutX="562.0" layoutY="1.0" mnemonicParsing="false" onAction="#dodaj" text="Doadaj komponentu &gt;&gt;" />
+            <Button fx:id="obrisiButton" layoutX="762.0" layoutY="1.0" mnemonicParsing="false" onAction="#obrisi" text="&lt;&lt; Obriši komponentu" />
+            <Button layoutX="666.0" layoutY="35.0" mnemonicParsing="false" onAction="#spremikonfiguraciju" text="Spremi konfiguraciju" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Matična">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaNovuMaticnuPlocu" text="Dodaj novu" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Procesor">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaNoviProcesor" text="Dodaj novi" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Radna memorija">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaNovuRadnuMemoriju" text="Dodaj novu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tvrdi disk">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaNoviTvrdiDisk" text="Dodaj novi" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

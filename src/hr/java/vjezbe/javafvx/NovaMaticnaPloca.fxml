@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.javafvx.NovaMaticnaPlocaController">
+   <children>
+      <Text layoutX="54.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naziv proizvođača:" />
+      <Text layoutX="56.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip matične ploče:" />
+      <Text layoutX="55.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip sučelja za procesor:" />
+      <Text layoutX="53.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maksimalan broj memorijskih modula:" />
+      <Text layoutX="56.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cijena" />
+      <Button layoutX="199.0" layoutY="254.0" mnemonicParsing="false" onAction="#spremiMaticnuPlocu" text="Spremi matičnu ploču" />
+      <TextField fx:id="nazivProizvodaca" layoutX="284.0" layoutY="67.0" />
+      <TextField fx:id="tipMaticnePloce" layoutX="284.0" layoutY="104.0" />
+      <TextField fx:id="cijena" layoutX="284.0" layoutY="215.0" />
+      <ComboBox fx:id="tipSuceljaProcesora" layoutX="283.0" layoutY="139.0" prefWidth="150.0" />
+      <ComboBox fx:id="brojMemorijskihModula" layoutX="283.0" layoutY="179.0" prefWidth="150.0" />
+   </children>
+</Pane>

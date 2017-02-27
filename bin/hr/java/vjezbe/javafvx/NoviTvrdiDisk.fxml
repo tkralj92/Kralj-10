@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.javafvx.NoviTvrdiDiskController">
+   <children>
+      <Text layoutX="54.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naziv proizvođača:" />
+      <Text layoutX="56.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip:" />
+      <Text layoutX="55.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kapacitet:" />
+      <Text layoutX="58.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cijena" />
+      <Button layoutX="198.0" layoutY="223.0" mnemonicParsing="false" onAction="#spremiMaticnuPlocu" text="Spremi matičnu ploču" />
+      <TextField fx:id="nazivProizvodaca" layoutX="284.0" layoutY="67.0" />
+      <TextField fx:id="tip" layoutX="284.0" layoutY="104.0" />
+      <TextField fx:id="cijena" layoutX="284.0" layoutY="176.0" />
+      <TextField fx:id="kapacitet" layoutX="284.0" layoutY="139.0" />
+   </children>
+</Pane>
